@@ -1,0 +1,123 @@
+$font-family-sans-serif: Raleway;
+$font-family-serif: museo-sans-1,museo-sans-2,helvetica,arial,sans-serif;
+$font-family-monospace: Consolas,"Liberation Mono",Courier,monospace;
+// We use these to define default font weights
+$font-weight-normal: normal !default;
+$font-weight-bold: bold !default;
+// Foundation color naming conventions 
+$weed : #2ecc71;
+$white : #FFFFFF;  
+$ghost : #FAFAFA;
+$snow : #F9F9F9;
+$vapor : #F6F6F6;
+$white-smoke : #F5F5F5;
+$silver : #EFEFEF;
+$smoke : #EEEEEE;
+$gainsboro : #DDDDDD;
+$iron : #CCCCCC;
+$base : #AAAAAA;
+$aluminum : #999999;
+$jumbo : #888888;
+$monsoon : #777777;
+$steel : #666666;
+$charcoal : #555555;
+$tuatara : #444444;
+$oil : #333333;
+$jet : #222222;
+$black : #000000;
+$coolgrey	: #dbdbdb;
+// We use these as default colors throughout
+$primary-color: $weed;
+$secondary-color: #008CBA;
+$alert-color: #f04124;
+$success-color: #43AC6A;
+$warning-color: #f08a24;
+$info-color: #a0d3e8;
+$paragraph-font-size: 1.2rem;
+$body-bg: $white;
+$body-font-color: $jet;
+$body-font-family: $font-family-sans-serif;
+$body-font-weight: $font-weight-normal;
+$body-font-style: normal;
+$header-font-weight: 300;
+$header-text-rendering: optimizeLegibility;
+// We use these to control header font styles
+// $header-font-family: $body-font-family;
+// $header-font-weight: $font-weight-normal;
+// $header-font-style: normal;
+$header-font-color: $weed;
+// $header-line-height: 1.4;
+// $header-top-margin: .2rem;
+// $header-bottom-margin: .5rem;
+// $header-text-rendering: optimizeLegibility;
+// We use these to control header font sizes
+// $h1-font-size: rem-calc(44);
+// $h2-font-size: rem-calc(37);
+// $h3-font-size: rem-calc(27);
+// $h4-font-size: rem-calc(23);
+// $h5-font-size: rem-calc(18);
+// $h6-font-size: 1rem;
+$topbar-link-weight: normal;
+$topbar-link-color: $jet;
+$topbar-link-color-hover: $jet;
+$topbar-link-color-active: $jet;
+$topbar-link-color-active-hover: $jet;
+//$topbar-link-bg: $topbar-bg;
+$topbar-link-bg-hover: $ghost;
+$topbar-link-bg-color-hover: $ghost;
+$topbar-link-bg-active: $white;
+$topbar-link-bg-active-hover: scale-color($ghost,$lightness: -0%);
+// Media query breakpoints
+$small-breakpoint: em-calc(640);
+$medium-breakpoint: em-calc(1024);
+$topbar-breakpoint: em-calc(820);
+$large-breakpoint: em-calc(1440);
+$xlarge-breakpoint: em-calc(1920);
+// Background color for the top bar
+$topbar-bg-color: $white;
+// $topbar-bg: $topbar-bg-color;
+// Height and margin
+$topbar-height: rem-calc(55);
+$topbar-margin-bottom: 0;
+// Controlling the styles for the title in the top bar
+// $topbar-title-weight: $font-weight-normal;
+//$topbar-title-font-size: rem-calc(17);
+// Set the link colors and styles for top-level nav
+$topbar-link-color: $jet;
+$topbar-link-color-hover: $jet;
+$topbar-link-color-active: $jet;
+$topbar-link-color-active-hover: $jet;
+// $topbar-link-weight: $font-weight-normal;
+$topbar-link-font-size: rem-calc(18);
+// $topbar-link-hover-lightness: -10%; // Darken by 10%
+// $topbar-link-bg: $topbar-bg;
+$topbar-link-bg-hover: $ghost;
+$topbar-link-bg-color-hover: $ghost;
+// $topbar-link-bg-active: $primary-color;
+// $topbar-link-bg-active-hover: scale-color($primary-color,$lightness: -14%);
+// $topbar-link-font-family: $body-font-family;
+// $topbar-link-text-transform: none;
+$topbar-link-padding: ($topbar-height / 2);
+$topbar-back-link-size: rem-calc(16);
+$topbar-link-dropdown-padding: rem-calc(10);
+// $topbar-button-font-size: .75rem;
+// $topbar-button-top: 7px;
+// Style the top bar dropdown elements
+$topbar-dropdown-bg: $ghost;
+$topbar-dropdown-link-color: $oil;
+// $topbar-dropdown-link-color-hover: $topbar-link-color-hover;
+$topbar-dropdown-link-bg: $ghost;
+$topbar-dropdown-link-bg-hover: $coolgrey;
+// $topbar-dropdown-link-weight: $font-weight-normal;
+// $topbar-dropdown-toggle-size: 5px;
+$topbar-dropdown-toggle-color: $jet;
+// $topbar-dropdown-toggle-alpha: .4;
+// $topbar-dropdown-label-color: $monsoon;
+// $topbar-dropdown-label-text-transform: uppercase;
+// $topbar-dropdown-label-font-weight: $font-weight-bold;
+$topbar-dropdown-label-font-size: rem-calc(10);
+// $topbar-dropdown-label-bg: $oil;
+$label-padding: rem-calc(8 16 8);
+
+$anchor-font-color: $secondary-color;
+$anchor-font-color-hover: scale-color($anchor-font-color, $lightness: -24%);
