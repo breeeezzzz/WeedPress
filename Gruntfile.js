@@ -183,7 +183,7 @@ module.exports = function (grunt) {
                 options: {
                     watchTask: true,
                     // fill in proxy address of local WP server
-                    proxy: "http://localhost:3001"
+                    proxy: ""
                 }
             }
         }

@@ -4,6 +4,7 @@
 node_modules/
 assets/components/
 assets/stylesheets/
+assets/scss/
 assets/fonts/
 assets/images/
 assets/javascript/vendor/
