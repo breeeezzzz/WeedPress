@@ -2,13 +2,10 @@
 *.sass-cache*
 *.log
 node_modules/
+assets/components/
 assets/stylesheets/
-EEOD/
 assets/fonts/
 assets/images/
-assets/components/
 assets/javascript/vendor/
 assets/javascript/foundation.js
 assets/javascript/custom/demosite.js
-packaged/
-assets/javascript/custom/stickyfooter.js
