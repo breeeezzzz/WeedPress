@@ -8,7 +8,7 @@ All contributions are welcome!
 
 ## Requirements
 
-This project requires [NodeJS](http://nodejs.org) to be installed on your machine.
+This project requires [NodeJS](http://nodejs.org) to be installed on your machine. Works with 0.10, 0.12, and 4.1! **Note that parts of our build process will break with NPM 3, due to the changes in how packages are installed.**
 
 FoundationPress uses [Sass](http://Sass-lang.com/) (CSS with superpowers). In short, Sass is a CSS pre-processor that allows you to write styles more effectively and tidy.
 
@@ -26,18 +26,13 @@ $ cd FoundationPress
 $ npm install
 ```
 
-(Many projects force their users to install [Bower](http://bower.io) and [Grunt](http://gruntjs.com/) globally. We don't like that and decided to use them via `npm scripts` which means, that Grunt and Bower are installed in your `node_modules` folder and we'll call them there. Bower install and grunt build will be called via npm scripts when you run npm install.)
+(Many project force their users to install [Bower](http://bower.io) and [Grunt](http://gruntjs.com/) globally. We don't like that and decided to use them via `npm scripts` which means, that Grunt and Bower are installed in your `node_modules` folder and we'll call them there. Bower install and grunt build will be called via npm scripts when you run npm install.)
 
 
 ### 2. While you're working on your project, run:
 
 ```bash
 $ npm run watch
-```
-
-If you want to take advantage of browser-sync (automatic browser refresh when a file is saved), simply enter the URL of your local WP-server in Gruntfile.js line 184, save and run
-```bash
-$ npm run browsersync
 ```
 
 ### 3. For building all the assets, run:
@@ -49,7 +44,7 @@ $ npm run build
 ### 4. Compress all files required for deployment:
 It is not recommended that you deploy the entire theme folder to your webserver. There is no danger associated with doing this, but it is a waste of disk space and bandwidth. The node_modules and components for instance is only required during theme development.
 
-By executing the command below, you will compress only the files that are required for deployment. The file will be available as a .zip inside the folder named '/packaged'.
+By executing the command below, you will compress only the files that are required for deployment. The file will be available as a .zip inside the folder named '/package'.
 
 ```bash
 $ npm run package

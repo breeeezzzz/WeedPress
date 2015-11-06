@@ -7,9 +7,10 @@
  * @package WordPress
  * @subpackage FoundationPress
  * @since FoundationPress 1.0.0
- */
+ */ 
 
 ?>
+
 <!doctype html>
 <html class="no-js" <?php language_attributes(); ?> >
 	<head>
@@ -20,10 +21,16 @@
 		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/apple-touch-icon-144x144-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/apple-touch-icon-114x114-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/apple-touch-icon-72x72-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/apple-touch-icon-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="/assets/images/icons/apple-touch-icon-precomposed.png">
+		<link rel="stylesheet" id="hover-effects" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/components/hover/css/hover.css" type="text/css" media="all">
 
+		<?php get_template_part( 'parts/user-logged-in' ); ?>
+		
 		<?php wp_head(); ?>
+		
 	</head>
+
+	
 	<body <?php body_class(); ?>>
 	<?php do_action( 'foundationpress_after_body' ); ?>
 

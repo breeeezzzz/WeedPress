@@ -58,6 +58,8 @@
 
 @import "../components/fontawesome/scss/font-awesome.scss";
 
+/* Foundation Icons */
+@import "../components/foundation-icons/general_foundicons.scss"; 
 
 /*
   My custom styles:
@@ -70,3 +72,5 @@
 @import "site/front";
 @import "site/featured";
 @import "site/footer";
+@import "site/woocommerce";
+@import "site/weedpress";

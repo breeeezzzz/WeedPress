@@ -39,7 +39,11 @@ class Foundationpress_Top_Bar_Walker extends Walker_Nav_Menu {
 	}
 
 	function start_lvl( &$output, $depth = 0, $args = array() ) {
+<<<<<<< HEAD
+		$output .= "\n<ul class=\"f-dropdown sub-menu dropdown\">\n";
+=======
 		$output .= "\n<ul class=\"sub-menu dropdown\">\n";
+>>>>>>> refs/remotes/upstream/master
 	}
 }
 endif;
