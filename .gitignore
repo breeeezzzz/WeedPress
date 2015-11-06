@@ -3,6 +3,9 @@
 *.log
 node_modules/
 assets/stylesheets/
+EEOD/
+assets/fonts/
+assets/images/
 assets/components/
 assets/javascript/vendor/
 assets/javascript/foundation.js
