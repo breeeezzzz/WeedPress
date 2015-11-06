@@ -238,28 +238,9 @@ li .logged-out-user {
     color: #333;
 }
 
+
 #faq h3 {
     margin-bottom: 0;
-}
-
-#faq h3:before {
-    content: "+";
-    font-size: 74%;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease;
-}
-
-#faq h3:active::before {
-    content: "+";
-    -webkit-font-smoothing: antialiased;
-    -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease;
 }
 
 ul#menu-copyright-menu li {
