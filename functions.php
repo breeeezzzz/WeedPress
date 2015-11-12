@@ -59,29 +59,60 @@ add_filter('loop_shop_columns', 'loop_columns');
 add_filter('loop_shop_columns', 'loop_columns');
 	if (!function_exists('loop_columns')) {
 	function loop_columns() {
-	return 4 ; // 3 products per row
+	return 3; // 3 products per row
 	}
 }
 
-function header_sub_nav() {
+
+function payment_types_nav() {
 	echo '
-		<div class="row">
-			<dl class="sub-nav">
-			  <dt></dt>
-			  <dd><a href="http://localhost/eeod/shop/">All</a></dd>
-			  <dd><a href="http://localhost/eeod/product-category/6/">Concentrate</a></dd>
-			  <dd><a href="http://localhost/eeod/product-category/5/">Edible</a></dd>
-			  <dd><a href="http://localhost/eeod/product-category/4/">Hybrid</a></dd>
-			  <dd><a href="http://localhost/eeod/product-category/2/">Indica</a></dd>
-			  <dd><a href="http://localhost/eeod/product-category/3/">Sativa</a></dd>
-			  <dd><a href="http://localhost/eeod/product-category/9/">Tincture</a></dd>
-			  <dd><a href="http://localhost/eeod/product-category/7/">Drinks</a></dd>
-			</dl>
-		</div>
-';
+		<ul class="headerIcons">
+			<li><i class="fa fa-bitcoin"></i></li>
+			<li><i class="fa fa-cc-stripe"></i></li>
+			<li><i class="fa fa-dollar"></i></li>
+			<li><i class="fa fa-cc-mastercard"></i></li>
+			<li><i class="fa fa-cc-paypal"></i></li>
+			<li><i class="fa fa-cc-visa"></i></li>
+			<li><i class="fa fa-bank"></i></li>
+		</ul>';
 }
 
-	
+// Add Shortcode
+function custom_payment_options_shortcode( $atts ) {
+
+	// Attributes
+	extract( shortcode_atts(
+		array(
+			'output' => '',
+		), $atts )
+	);
+
+	// Code
+$output = '<ul class="headerIcons">
+			<li><i class="fa fa-bitcoin"></i></li>
+			<li><i class="fa fa-cc-stripe"></i></li>
+			<li><i class="fa fa-dollar"></i></li>
+			<li><i class="fa fa-cc-mastercard"></i></li>
+			<li><i class="fa fa-cc-paypal"></i></li>
+			<li><i class="fa fa-cc-visa"></i></li>
+			<li><i class="fa fa-bank"></i></li>
+		</ul>';
+
+return $output;
+}
+add_shortcode( 'payment_options', 'custom_payment_options_shortcode' );
+
+
+function rotating_text() {
+	echo '
+		<div id="rotate">						
+			<div><h2 class="header-rotate show-for-large-up" align="center">No Medical Card Needed</h2></div>
+			<div><h2 class="header-rotate show-for-large-up" align="center">Worldwide Shipping</h2></div> 
+			<div><h2 class="header-rotate show-for-large-up" align="center">Must Be Over 19</h2></div>					
+		</div>';
+}
+
+				
 function register_footer_menus() {
   register_nav_menus(
     array(

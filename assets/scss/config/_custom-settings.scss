@@ -6,6 +6,7 @@ $font-weight-normal: normal !default;
 $font-weight-bold: bold !default;
 // Foundation color naming conventions 
 $weed : #2ecc71;
+$darkweed : #25a35a;
 $white : #FFFFFF;  
 $ghost : #FAFAFA;
 $snow : #F9F9F9;
@@ -64,9 +65,9 @@ $topbar-link-color-active: $jet;
 $topbar-link-color-active-hover: $jet;
 //$topbar-link-bg: $topbar-bg;
 $topbar-link-bg-hover: $ghost;
-$topbar-link-bg-color-hover: $ghost;
+$topbar-link-bg-color-hover:  $ghost;
 $topbar-link-bg-active: $white;
-$topbar-link-bg-active-hover: scale-color($ghost,$lightness: -0%);
+$topbar-link-bg-active-hover:  $ghost;
 // Media query breakpoints
 $small-breakpoint: em-calc(640);
 $medium-breakpoint: em-calc(1024);
@@ -92,7 +93,7 @@ $topbar-link-font-size: rem-calc(18);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 // $topbar-link-bg: $topbar-bg;
 $topbar-link-bg-hover: $ghost;
-$topbar-link-bg-color-hover: $ghost;
+$topbar-link-bg-color-hover:  $ghost;
 // $topbar-link-bg-active: $primary-color;
 // $topbar-link-bg-active-hover: scale-color($primary-color,$lightness: -14%);
 // $topbar-link-font-family: $body-font-family;
@@ -106,10 +107,10 @@ $topbar-link-dropdown-padding: rem-calc(10);
 $topbar-dropdown-bg: $ghost;
 $topbar-dropdown-link-color: $oil;
 // $topbar-dropdown-link-color-hover: $topbar-link-color-hover;
-$topbar-dropdown-link-bg: $ghost;
+$topbar-dropdown-link-bg:  $ghost;
 $topbar-dropdown-link-bg-hover: $coolgrey;
 // $topbar-dropdown-link-weight: $font-weight-normal;
-// $topbar-dropdown-toggle-size: 5px;
+// $topbar-dropdown-toggle-size: 5px; 
 $topbar-dropdown-toggle-color: $jet;
 // $topbar-dropdown-toggle-alpha: .4;
 // $topbar-dropdown-label-color: $monsoon;
@@ -120,4 +121,24 @@ $topbar-dropdown-label-font-size: rem-calc(10);
 $label-padding: rem-calc(8 16 8);
 
 $anchor-font-color: $secondary-color;
-$anchor-font-color-hover: scale-color($anchor-font-color, $lightness: -24%); 
+$anchor-font-color-hover: scale-color($anchor-font-color, $lightness: -24%);
+
+$include-html-tooltip-classes: $include-html-classes;
+
+body p {
+	font-family: 'Open Sans', sans-serif !important;
+}
+
+.collapsed-widgets {
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+}
+
+.sticky-sidebar {
+  position: relative;
+  top: 0; 
+}
+
+#sidebar .stickysidebar {
+	height:500px;
+}

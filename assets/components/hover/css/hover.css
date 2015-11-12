@@ -3310,13 +3310,16 @@
   padding-right: 2.2em;
 }
 .hvr-icon-down:before {
-  content: "\f01a";
+  content: "\f25a";
   position: absolute;
-  right: 1em;
+  right: 0.5em;
+  font-size: 1.3em;
+  color: rgb(255, 255, 255);
   padding: 0 1px;
   font-family: FontAwesome;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
+  font-weight: 400;
 }
 .hvr-icon-down:hover:before, .hvr-icon-down:focus:before, .hvr-icon-down:active:before {
   -webkit-animation-name: hvr-icon-down;
@@ -4040,7 +4043,7 @@
   transition-duration: 0.3s;
 }
 .hvr-icon-rotate:before {
-  content: "\f0c6";
+  content: "\f006";
   position: absolute;
   right: 1em;
   padding: 0 1px;
@@ -4422,7 +4425,7 @@
   transition-duration: 0.3s;
 }
 .hvr-icon-wobble-horizontal:before {
-  content: "\f061";
+  content: "\f07a";
   position: absolute;
   right: 1em;
   padding: 0 1px;

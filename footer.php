@@ -11,57 +11,79 @@
  */
 
 ?>
-
+<h5 class="eeod-quote"><i class="fa fa-quote-left"></i> From our hearts to yours we extend our blessings. Om mani padme hum.</h5>
 </section>
 
-<div id="footer-container">
 
-	<footer id="footer">
-		<?php do_action( 'foundationpress_before_footer' ); ?>
-		<?php dynamic_sidebar( 'footer-widgets' ); ?>
-		<?php do_action( 'foundationpress_after_footer' ); ?>
+
+
+ 	<footer id="footer-container">
+		
+		<div id="newsletter">
+		  <div class="row">
+		  
+			<div class="medium-8 columns">
+
+				
+			</div>
+			
+			<div class="medium-4 columns">
+				<h5>Can't find what you're looking for?</h5>
+				<p>Try searching!</p>
+				<?php get_template_part( 'searchform' ); ?>
+			</div>
+		  </div>
+		</div>
+ 
+		<div class="row footer-widget-area">
+			<div class="medium-4 columns">
+				<span class="eye-con center"><i class="fa fa-eye"></i></span> 
+				<h4 align="center">Eagle Eye</h4>
+				<p>Eagle eye online dispensary is a small collective of individuals committed to providing an alternative healing path. We believe that the benefits of cannabis are undeniable and that all adults should have to option to work with this entheogen (plant spirit medicine).</p>
+
+			</div>
+			<div class="medium-8 columns widgetsFooter">
+				<div class="row collapse">
+					<?php dynamic_sidebar( 'footer-widgets' ); ?>
+				</div>
+			</div>
+		</div>
+		
 	</footer>
 	
-		<footer id="second-footer">
-		<!--
-			<div id="footer-logo">
-
-					<img width="500px" height="500x" src="http://localhost/eeod/wp-content/uploads/2015/10/eagle-eye-logo.jpg" alt="EEOD" title="Eagle Eye Online Dispensary">
-			</div>
-			-->
-			
-			<div class="row">
-				<div class="large-12 columns">
-					<?php wp_nav_menu( array( 'theme_location' => 'footer-menu', 'container_class' => 'footer_menu_class' ) ); ?>
-					<span class="copyspan" style="position:relative;width:100%;margin-left:auto;margin-right:auto;text-align:center;">Copyright 2015 - Eagle Eye Online Dispensary</span>
-				</div>
+	<footer id="second-footer">
+	
+			<?php wp_nav_menu( array( 'theme_location' => 'footer-menu', 'container_class' => 'footer_menu_class' ) ); ?>
 			<?php dynamic_sidebar( 'social-widgets' ); ?>
-					<div class="flag-image-container">
-						<img src="http://localhost/eeod/wp-content/uploads/2015/10/ca_weed.gif" class="alignnone" width="75" height="75">
-
-						<img src="http://localhost/eeod/wp-content/uploads/2015/10/bc-flag.gif" class="alignnone" width="75" height="75">
-					</div>
-			</div>
-
-		</footer>
 		
+	</footer>
+	<footer id="third-footer">
+		<div class="paymentIcons-footer">
+				<?php echo do_shortcode('[payment_options]'); ?>
 
+		</div>
 		
-</div>
+		<span class="copyspan">Copyright 2015 - Eagle Eye Online Dispensary</span>
+	</footer>	
 
-<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) == 'offcanvas' ) : ?>
+	<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) == 'offcanvas' ) : ?>
 
 <a class="exit-off-canvas"></a>
-<?php endif; ?>
+	<?php endif; ?>
 
 	<?php do_action( 'foundationpress_layout_end' ); ?>
 
-<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) == 'offcanvas' ) : ?>
+	<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) == 'offcanvas' ) : ?>
 	</div>
-</div>
-<?php endif; ?>
+</div> 
+	<?php endif; ?>
 
 <?php wp_footer(); ?>
 <?php do_action( 'foundationpress_before_closing_body' ); ?>
+<script>
+	$(document).ready(function() {
+	  document.getElementsByTagName("html")[0].style.visibility = "visible";
+	});
+</script>
 </body>
 </html>

@@ -22,12 +22,12 @@
 		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/apple-touch-icon-114x114-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/apple-touch-icon-72x72-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" href="/assets/images/icons/apple-touch-icon-precomposed.png">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,400italic,700italic,800' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" id="hover-effects" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/components/hover/css/hover.css" type="text/css" media="all">
+		<style>html { visibility:hidden; }</style>
+		<?php wp_head(); ?>
 
 		<?php get_template_part( 'parts/user-logged-in' ); ?>
-		
-		<?php wp_head(); ?>
-		
 	</head>
 
 	
@@ -51,5 +51,5 @@
 
 	<?php get_template_part( 'parts/top-bar' ); ?>
 
-<section class="container" role="document">
+<section id="main-content" class="container main-content" role="document">
 	<?php do_action( 'foundationpress_after_header' ); ?>
