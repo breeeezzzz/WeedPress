@@ -9,6 +9,14 @@
 
 ?>
 
+<nav class="top-login-bar">
+		<ul class="top-login-area">
+          <li><a href="#"><span class="label secondary">Sign Up</span></a></li>
+          <li><a href="#"><span class="label secondary">Contact</span></a></li>
+          <li><a href="#"><span class="label secondary">Contact</span></a></li>
+        </ul>
+</nav>
+
 <?php get_template_part( 'parts/featured-image-frontpage' ); ?>
 
 
@@ -23,6 +31,7 @@
             <?php foundationpress_top_bar_r(); ?>
 		
         </section>
+	
 
     </nav>
 </div>
