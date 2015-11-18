@@ -4,8 +4,6 @@
 			},
 			function() {
 				jQuery(this).next().removeClass('animated bounce').css('color', 'rgba(46,204,113,0.7)');
-<<<<<<< HEAD
+ 
 			});
-=======
-			});
->>>>>>> origin/master-dev
+ 
