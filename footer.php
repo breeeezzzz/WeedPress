@@ -17,19 +17,23 @@
  	<footer id="footer-container">
 		
 			<div id="newsletter">
-			  <div class="row">
-			  
-				<div class="medium-8 columns">
+				<div class="row">
 
 					
-				</div>
+					<div class="small-2 large-6 columns">
+						<ul class="button-group newsletter-group">
+						  <li><a href="#" class="button">Contact</a></li>
+						  <li><a href="#" class="button">Login</a></li>
+						  <li><a href="#" class="button">Sign Up</a></li>
+						</ul>
+					</div>
 				
-				<div class="medium-4 columns">
-					<h5>Can't find what you're looking for?</h5>
-					<p>Try searching!</p>
-					<?php get_template_part( 'searchform' ); ?>
+					<div class="large-4 columns">
+						<div style="margin-top:1em;"><?php get_template_part( 'searchform' ); ?></div>
+					</div>
+					
 				</div>
-			  </div>
+			 
 			</div>
  
 		<div class="row footer-widget-area">

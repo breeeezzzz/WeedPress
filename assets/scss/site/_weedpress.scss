@@ -565,17 +565,20 @@ ul li ul,ul li ol {
 }
 
 #what-we-do {
-    margin-top: 2em;
+    margin-top: 3em;
 }
 
 .weed-logo {
     position: absolute;
     opacity: .05;
+    top: 650px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     display: block;
+    /* top: 10px; */
     width: 100%;
+    left: 600px;
 }
 
 .weed-logo-2 {
@@ -944,7 +947,7 @@ ul#menu-copyright-menu.menu>li {
     width: 100%;
     text-align: center;
     position: absolute;
-    bottom: 0;
+    bottom: 150px;
 }
 
 .front-page-button {
@@ -1083,7 +1086,7 @@ ul.headerIcons {
 
 hr.lineClass {
     margin: 0; 
-    margin-bottom: 150px;
+    margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -1196,11 +1199,13 @@ h5.jet {
     margin-top: 10px;
     color: #fff;
     line-height: 24px; }
-  #newsletter p {
+#newsletter p {
     clear: both;
     font-size: 13px;
     padding-top: 2px;
-    color: #fff; }
+    color: #fff;
+    /* float: right; */
+}
   #newsletter a {
     color: #fff; }
   #newsletter .margintop-20px {
@@ -1360,4 +1365,85 @@ ul.legal-links li {
 #sidebar-left h6 {
     font-size: 1.5em;
     font-weight: 700;
+}
+
+ul.top-login-area {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+	list-style-type:none;
+		padding-left:1em;
+	padding-right:1em;
+	 line-height: 2em;
+}
+
+ul.top-login-area li {
+	display:inline-block;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+}
+
+ul.top-login-area li label {
+    border-radius: 5px;
+}
+
+.top-login-bar {
+    -webkit-backface-visibility: hidden;
+    background: #333333;
+    color: #FFFFFF;
+	position:absolute;
+	right:0;
+	top:0;
+    height: 2.8125rem;
+    line-height: 2.8125rem;
+    position: relative;
+	    z-index: 300;
+}
+
+.tagline {
+    top: 150px;
+    width: 100%;
+    height: 100%;
+    /* padding-top: 150px; */
+    position: absolute;
+}
+
+#featured-hero {
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+    /* height: 100%; */
+}
+
+.tagline {
+    top: 100px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 0;
+}
+
+ul.newsletter-group  {
+		margin-top:1em;
+}
+
+ul.newsletter-group li a {
+        height: 37px;
+        line-height:0.5;
+        background:$main-blue;
+}
+
+ul.newsletter-group li a:hover {
+        height: 37px;
+        line-height:0.5;
+        background:$main-darkblue;
+}
+
+.view-height {
+    height: 90vh;
+    width:100%;
 }
