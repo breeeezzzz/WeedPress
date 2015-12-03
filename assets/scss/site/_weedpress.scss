@@ -1,9 +1,4 @@
 // HEADER HEADER HEADER
-.tagline {
-    width: 100%;
-    height: 100%;
-    padding-top: 150px;
-}
 
 .tagline-other {
     width: 100%;
@@ -197,13 +192,13 @@ ul#menu-product-categories li a:hover {
 }
 
 #featured-hero {
-    z-index: 999;
+    z-index: 99;
     position: absolute;
     width: 100%;
 }
 
 #featured-hero-small {
-    z-index: 999;
+    z-index: 99;
     position: absolute;
     width: 100%;
 }
@@ -464,7 +459,7 @@ h5.eeod-quote {
     letter-spacing: 0.15em;
     font-size: 4.1vh;
     /* position: absolute; */
-    z-index: 999;
+    z-index: 99;
     /* bottom: 80px; */
     font-family: raleway;
     color: rgba(0, 0, 0, 0.36);
@@ -947,7 +942,7 @@ ul#menu-copyright-menu.menu>li {
     width: 100%;
     text-align: center;
     position: absolute;
-    bottom: 150px;
+    /*bottom: 150px;*/
 }
 
 .front-page-button {
@@ -972,7 +967,6 @@ a.front-page-button {
 
 #loadingHeader {
     position: relative;
-    height: 100%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1404,13 +1398,7 @@ ul.top-login-area li label {
 	    z-index: 300;
 }
 
-.tagline {
-    top: 150px;
-    width: 100%;
-    height: 100%;
-    /* padding-top: 150px; */
-    position: absolute;
-}
+
 
 #featured-hero {
     z-index: 100;
@@ -1422,7 +1410,7 @@ ul.top-login-area li label {
 .tagline {
     top: 100px;
     width: 100%;
-    height: 100%;
+    height: 20rem;
     position: absolute;
     padding: 0;
 }
@@ -1447,3 +1435,43 @@ ul.newsletter-group li a:hover {
     height: 90vh;
     width:100%;
 }
+
+.tiny a {
+    color:WHITE;
+}
+
+
+
+
+/* LoginOut Modal */
+
+.loginout-modal-style {
+    max-width: 22.5rem;
+    right: 0;
+    min-height: 350px;
+}
+
+.remember-label {
+    font-size: 0.85em;
+    font-weight: 400;
+    margin-left: 0;
+}
+
+table tr.even, table tr.alt, table tr:nth-of-type(even) {
+    background: #FFF;
+}
+
+.lwa-loading { left:0px; top:0px;}
+
+.loginout-modal-style input[type="file"], .loginout-modal-style input[type="checkbox"], .loginout-modal-style input[type="radio"], select { 
+	margin-left: 0 !important;
+	margin-top: 0 !important;
+}
+
+[id^="contact-form-comment-"] { 
+	height:200px !important;
+}
+
+.lwa {
+	margin-bottom:0;
+	}
