@@ -7,7 +7,7 @@ get_header(); ?>
 	<div class="row">
 
 			
-			<div class="small-12 large-12 columns" role="main">
+			<div class="large-8 columns" role="main">
 			
 			<?php do_action( 'foundationpress_before_content' ); ?>
 
@@ -25,6 +25,6 @@ get_header(); ?>
 
 			</div>
 
-		<?php get_sidebar(); ?>
+				<?php get_sidebar(); ?>
 	</div>
 <?php get_footer(); ?>

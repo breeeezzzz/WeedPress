@@ -19,7 +19,7 @@
 			<div id="newsletter">
 				<div class="row">
 
-					
+					<!--
 					<div class="small-2 large-6 columns">
 						<ul class="button-group newsletter-group">
 						  <li><a href="#" class="button">Contact</a></li>
@@ -27,7 +27,8 @@
 						  <li><a href="#" class="button">Sign Up</a></li>
 						</ul>
 					</div>
-				
+					-->
+					
 					<div class="large-4 columns">
 						<div style="margin-top:1em;"><?php get_template_part( 'searchform' ); ?></div>
 					</div>
@@ -79,41 +80,31 @@
 	</div>
 </div> 
 	<?php endif; ?>
-
-
-
-
-<?php do_action( 'foundationpress_before_closing_body' ); ?>
-<?php wp_footer(); ?>
-<?php get_template_part( '/plugins/login-with-ajax/widget_out.php/' ); ?> 
 <script>
 	jQuery(document).ready(function() {
 	  document.getElementsByTagName("html")[0].style.visibility = "visible";
 	});
 </script>
 <script>
-	$( '.lwa-links-register-inline' ).click(function() {
-	  $( '.lwa-form:visible' ).toggle('slow');
+	jQuery( '.lwa-links-register-inline' ).click(function() {
+	  jQuery( '.lwa-form:visible' ).toggle('slow');
 	});		
 	
 	
-	$( '.lwa-links-register-inline-cancel' ).click(function() {
-	  $( '.lwa-form:hidden' ).toggle('slow');
+	jQuery( '.lwa-links-register-inline-cancel' ).click(function() {
+	  jQuery( '.lwa-form:hidden' ).toggle('slow');
 	});			
 	
-	$( '.lwa-links-remember-cancel' ).click(function() {
-	  $( '.lwa-form:hidden' ).toggle('slow');
+	jQuery( '.lwa-links-remember-cancel' ).click(function() {
+	  jQuery( '.lwa-form:hidden' ).toggle('slow');
 	});		
 	
-	$( '.lwa-links-remember' ).click(function() {
-	  $( '.lwa-form' ).toggle('slow');
+	jQuery( '.lwa-links-remember' ).click(function() {
+	  jQuery( '.lwa-form' ).toggle('slow');
 	});	
 </script>
-<script>
-  window.intercomSettings = {
-    app_id: "f1ottoiz"
-  };
-</script>
-<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/f1ottoiz';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+<?php do_action( 'foundationpress_before_closing_body' ); ?>
+<?php get_template_part( '/plugins/login-with-ajax/widget_out.php' ); ?>
+<?php wp_footer(); ?>
 </body>
 </html>

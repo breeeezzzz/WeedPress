@@ -10,7 +10,8 @@
 
 							
 						<div class="front-page-button-div show-for-large-up">
-							<a role="button" class="front-page-button secondary button hvr-icon-down bounceInDown animated" href="#what-we-do">Get Started!</a>
+							<a role="button" class="front-page-button-sign-up alert button" href="#what-we-do">Sign Up</a>
+							<a role="button" class="front-page-button secondary button hvr-icon-down bounceInDown animated" href="#what-we-do">Learn More!</a>
 						</div>
 							
 
