@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: WooCommerce Sidebars
+Template Name: Left Fly-out Sidebar
 */
 get_header(); ?>
 

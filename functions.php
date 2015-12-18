@@ -59,7 +59,7 @@ add_filter('loop_shop_columns', 'loop_columns');
 add_filter('loop_shop_columns', 'loop_columns');
 	if (!function_exists('loop_columns')) {
 	function loop_columns() {
-	return 4; // 3 products per row
+	return 3; // 3 products per row
 	}
 }
 
@@ -123,4 +123,44 @@ function register_footer_menus() {
 }
 add_action( 'init', 'register_footer_menus' );
 
-?>
+
+
+// Alter produt loop individual products 
+add_action( 'woocommerce_before_shop_loop_item_title', 'new_product_defaults_wrap_open' , 20 ); //opener
+add_action( 'woocommerce_after_shop_loop_item_title', 'new_product_defaults_wrap_close', 40); //closer
+
+function new_product_defaults_wrap_open() {
+  echo '<div class="product-details ">';
+}
+function new_product_defaults_wrap_close() {
+	echo '</div><!--/.product-details-->';
+}
+
+
+add_filter( 'woocommerce_product_add_to_cart_text' , 'custom_woocommerce_product_add_to_cart_text' );
+/**
+ * custom_woocommerce_template_loop_add_to_cart
+*/
+function custom_woocommerce_product_add_to_cart_text() {
+	global $product;
+	
+	$product_type = $product->product_type;
+	
+	switch ( $product_type ) {
+		case 'external':
+			return __( 'Buy product', 'woocommerce' );
+		break;
+		case 'grouped':
+			return __( 'View products', 'woocommerce' );
+		break;
+		case 'simple':
+			return __( 'Add to Cart', 'woocommerce' );
+		break;
+		case 'variable':
+			return __( 'Add to Cart', 'woocommerce' );
+		break;
+		default:
+			return __( 'Read more', 'woocommerce' );
+	}
+	
+}

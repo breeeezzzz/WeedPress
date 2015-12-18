@@ -276,9 +276,6 @@ mark {
     margin-right: 1em;
 }
 
-.woocommerce ul.products li.product h3:hover {
-}
-
 .woocommerce div.product .woocommerce-tabs ul.tabs {
     list-style: none;
     overflow: hidden;
@@ -536,7 +533,7 @@ table.shop_table thead {
     top: 0;
     width: 100%;
     text-align: center;
-    color: #fff;
+    color: #222;
     background-color: $weed;
     font-family: raleway;
     font-weight: 600;
